@@ -1,0 +1,24 @@
+# Core async support
+asyncio
+
+# LangChain and LangGraph
+langchain
+langgraph
+langchain-google-genai>=2.0.0
+google-generativeai>=0.8.0
+langchain-core
+langchain-community
+ddgs
+
+# Requests
+requests
+
+# Streamlit UI
+streamlit
+
+# Browser Automation
+playwright
+nest_asyncio
+browser-use
+
+#playwright install chromium
