@@ -268,5 +268,22 @@ app = workflow.compile()
 
 # For testing functionality directly
 if __name__ == "__main__":
-    # Test run
-    pass
+    import asyncio
+    
+    # Default topic for standalone run
+    DEFAULT_TOPIC = "Artificial Intelligence"
+    
+    print(f"🚀 Launching Standard Blog Pipeline for topic: {DEFAULT_TOPIC}...")
+    
+    initial_state = {
+        "topic_category": DEFAULT_TOPIC,
+        "headlines": [],
+        "selected_headline": None,
+        "research_data": None,
+        "blog_post": None,
+        "status": "Starting",
+        "status_callback": None
+    }
+    
+    # The standard pipeline starts with 'fetch_news', so we can just invoke it.
+    app.invoke(initial_state)
